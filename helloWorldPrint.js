@@ -1,5 +1,5 @@
 function printHelloWorld() {
-    return "Hello, world !";
+  return "Hello, world !";
 }
 const msg = printHelloWorld();
 console.log(msg);
