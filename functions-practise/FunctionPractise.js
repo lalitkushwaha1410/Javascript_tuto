@@ -69,12 +69,13 @@ console.log(output);
 // to the top of the current scope before compilation time , before code execution
 
 // call a function before its initialization
-
+// function hoisting is possible
 myFunc();
 function myFunc(){
     console.log('I am javascript');
 }
 
+//variable hoisting is also possible but only declaration is hoisted not initialization
 //console.log(myNum); // doesnt give error but prints undefined , only var is hoisted
 // var myNum = 10;
 //console.log(myNum);
@@ -142,7 +143,7 @@ const person = {
     country : 'India'
 }
 
-function printPersonDetails(person){
+function printPersonDetails(person) {
     const {name, age, country} = person;
     console.log(`Name is ${name}, Age is ${age}, Country is ${country}`);
 }
