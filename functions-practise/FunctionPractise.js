@@ -105,24 +105,32 @@ function outerFunc(){
 }
 
 outerFunc()();
-
+//---------------------------------------------------------------------------------------------------------------------------------//
 // Lexical scoping : inner function has access to variables and parameters of outer function
-// even after the outer function has returned
 // defination : scope of a variable is defined by its location within the code
+
+// What is Lexical Scope?
+// Lexical scope defines the accessibility of variables and functions depending on their location in the source code. 
+// Variables and functions have different levels of scope:
+
+// Global Scope: Variables defined outside any function or block, accessible anywhere in the program.
+// Local Scope: Variables defined inside a function or block, accessible only within that specific function or block.
+// Nested Scope: Inner functions have access to variables in their parent functions.
+// Block Scope: Variables defined with let and const are limited to the block they are declared in, like loops or conditionals.
 
 const num = 40 ; // global variable in lexical scope
 function outerFunc1(){
     //const num = 5;
     function innerFunc1(){
      //   const num = 10;
-        console.log(num); // first inner num will be lloked for . if not found then outer num will be looked for and 
+        console.log(num); // first inner num will be looked for . if not found then outer num will be looked for and 
                                                                 // if not found then global num will be looked for
     }   
     innerFunc1();
 
 }
 outerFunc1();
-
+//--------------------------------------------------------------------------------------------------------------------------------//
 // Function scope and block scope
 
 function myFunc3(){
@@ -150,4 +158,11 @@ function printPersonDetails(person) {
 
 printPersonDetails(person);
 
-//example -2 : array destructuring
+//example -2 : array destructuring in function parameters
+ 
+function printArray([name, age, country]){
+    console.log(`Name is ${name}, Age is ${age}, Country is ${country}`);
+}
+
+const personArray = ['Ankur', 30, 'India'];
+printArray(personArray);
