@@ -26,7 +26,7 @@ let myPromise = new Promise((resolve, reject) => {
     if(flag){
         setTimeout(()=>{
             resolve('Promise is resolved');
-        },5000);
+        },3000);
     }
     else{
         reject('Promise is rejected');

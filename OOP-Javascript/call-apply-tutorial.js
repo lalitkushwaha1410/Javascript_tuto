@@ -1,5 +1,5 @@
 // call and apply method in javascript
-
+// call, apply , bind method is used to borrow methods from other objects
 // call method : used to call a function with a given this value and arguments provided individually
 // apply method : used to call a function with a given this value and arguments provided as an array
 
@@ -28,3 +28,5 @@ user1.sayHello.call(user2, 'Football', 'Pizza'); // here user2 object is passed 
 // apply method example
 user1.sayHello.apply(user2, ['Volleyball', 'Burger']); // here user2 object is passed as this value and
                                                                     // hobby and food are passed as array
+const result = user1.sayHello.bind(user2, 'Chess', 'Momoz'); // here bind method is used to borrow method from user1 object and call it using user2 object
+result();

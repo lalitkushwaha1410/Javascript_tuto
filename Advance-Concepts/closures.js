@@ -5,7 +5,7 @@
 // why need closures? // to maintain state of a function , to maintain private variables , data encapsulation ,data hiding
 // closures are used to create private variables in javascript.
 //“closure” is a fundamental concept that arises from the combination of functions and lexical scoping.
-//  A closure allows a function to retain access to variables from its outer (enclosing) scope even after that scope has finished executing. 
+//  A closure allows a function to retain access to variables from its outer (enclosing) scope even after that outer scope has finished executing. 
 // This means that a function “closes over” the variables from its surrounding context, and it can still reference and use those variables 
 // even when called outside of their original scope. This is an example of lexical scoping, where the inner function can "see" and 
 // access variables from its lexical scope. 
@@ -54,13 +54,14 @@ console.log('------------------------------------------------------');
 // example-3 of closures
 
 function outerFunction1(){
-    var outerVar = 'I am outer variable';
+     const  outerVar = 'I am outer variable';
 
-    function innerFunction1(){
-        console.log(outerVar);
+    return function innerFunction1(){
+         console.log(outerVar);
+         
     }
-    return innerFunction1;
+   
 }
 
-const var1 = outerFunction1();
-console.log(var1());
+const result = outerFunction1();
+result();

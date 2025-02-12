@@ -27,5 +27,5 @@ const user1 = {
     myArrow : myArrowFunction // print undefined - undefined because arrow function does not have its own this , refers to global object
 };
 
-//user1.myReg(); 
+user1.myReg(); 
 user1.myArrow();

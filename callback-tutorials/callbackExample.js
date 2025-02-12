@@ -1,6 +1,6 @@
 // callback function
 // callback function is a function that is passed as an argument to another function which is then excuted inside
-//  the outer function to complete some task or action
+// the outer function to complete some task or action
 //callback helps in asynchronous programming
 
 function greeting(name, callback){
@@ -14,9 +14,9 @@ function sayGoodbye(){
 
 greeting('Ankur', sayGoodbye);
 
-console.log('-----------------------------------');
+console.log('----------------------------------------------------------------------------------------------------------------------------');
 
-// next example for callback function
+// next example for callback function with settimeout
 
 function fetchData(callback){
     setTimeout(() => {
@@ -32,7 +32,7 @@ function displayData(){
 fetchData(displayData);
 
 
-console.log('-----------------------------------');
+console.log('------------------------------------------------------------------------------------------------------------------------------');
 // next topic - function returning another function
 
  function createSum(num1){
@@ -46,7 +46,7 @@ console.log('-----------------------------------');
 
  console.log(createSum(10)(20)); // here 10 is num1 for outer func and 20 is num2 for inner func
 
- console.log('-----------------------------------');
+ console.log('----------------------------------------------------------------------------------------------------------------------');
 
  // callback hell - when we have multiple nested callbacks
  // to avoid callback hell we can use promises or async await
@@ -61,7 +61,7 @@ console.log('-----------------------------------');
 //         return cheese;
 //     }, 2000);
 // }
-console.log('-----------------------------------');
+console.log('-------------------------------------------------------------------------------------------------------------------');
 
 
 function prepareTea(){
