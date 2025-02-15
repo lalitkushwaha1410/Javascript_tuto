@@ -1,5 +1,4 @@
 // async await is a special syntax to work with promises in a more comfortable fashion
-// async await is syntactic sugar for promises
 // async await is built on top of promises
 // async await is non blocking
 // async await is used to write synchronous looking async code
@@ -9,7 +8,7 @@
 // async returns a promise
 
 // problem with promise is that resolve and reject function needs to be called explicitly
-// if a statment is awaited then the function should be async
+// if a statment is await then the function should be async
 // but async function not necessary to have await statement
 
 async function myFunction() {
