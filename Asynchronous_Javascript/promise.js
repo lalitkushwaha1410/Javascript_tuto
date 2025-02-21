@@ -22,7 +22,7 @@
 
 
 let myPromise = new Promise((resolve, reject) => {
-    let flag = true;
+    let flag = false;
     if(flag){
         setTimeout(()=>{
             resolve('Promise is resolved');
