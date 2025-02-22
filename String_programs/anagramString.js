@@ -1,5 +1,6 @@
 
-function checkAnagrams(str1,str2){
+function checkAnagrams(str1,str2)
+{
     let str1Sorted = str1.split('').sort().join('');
     let str2Sorted = str2.split('').sort().join('');
 
