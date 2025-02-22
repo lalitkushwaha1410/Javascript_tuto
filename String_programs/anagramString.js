@@ -10,7 +10,6 @@ function checkAnagrams(str1,str2)
     else {
         console.log("The strings are not anagrams");
     }
-
 }
 
 let str1 = "listen";
