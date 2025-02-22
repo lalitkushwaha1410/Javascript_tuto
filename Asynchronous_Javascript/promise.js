@@ -20,9 +20,8 @@
 // PromiseState : pending
 // PromiseResult : undefined
 
-
 let myPromise = new Promise((resolve, reject) => {
-    let flag = false;
+    let flag = true;
     if(flag){
         setTimeout(()=>{
             resolve('Promise is resolved');
@@ -34,7 +33,7 @@ let myPromise = new Promise((resolve, reject) => {
 
 });
 
-console.log(myPromise);
+//console.log(myPromise);
 
 myPromise.then((value) => {
     console.log(value);
