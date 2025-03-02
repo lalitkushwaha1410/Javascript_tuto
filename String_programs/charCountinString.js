@@ -6,3 +6,4 @@ function charCount(string) {
   }
 
 console.log(charCount("javaaaascript")); 
+

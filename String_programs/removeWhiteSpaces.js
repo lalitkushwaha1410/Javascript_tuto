@@ -10,7 +10,6 @@ function removeAllSpaces(str) {
 
 console.log(removeAllSpaces("This is    my string to  remove     all    spaces "));
 
-
 function replaceword(str) {
     let result = str.split('t').join('0');
     console.log(result);

@@ -9,7 +9,5 @@ function countVowels(str) {
     return count;
 }
 
-console.log(countVowels("hello world"));  
-
-
+console.log(countVowels("hello world")); 
 
