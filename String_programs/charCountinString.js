@@ -8,7 +8,7 @@
 // console.log(charCount("jjavaascccripptt")); 
 
 function countCharacters(str) {
-  const charCount = {};
+  const charCount = {}; // empty object
 
   for (let char of str) {
       charCount[char] = (charCount[char] || 0) + 1;
@@ -21,3 +21,16 @@ function countCharacters(str) {
 
 const result = countCharacters("jjavaascccripptt");
 console.log(result);
+
+function countOccurrences(arr) {
+  let countMap = {}; // empty object
+
+  for (let item of arr) {
+      countMap[item] = (countMap[item] || 0) + 1;
+  }
+
+  return countMap;
+}
+
+const output = countOccurrences([5,6,7,4,3,5,6,3,3,4,5]);
+console.log(output);
