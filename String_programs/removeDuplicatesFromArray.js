@@ -10,7 +10,7 @@ function removeDuplicates(numArray) {
     return uniqueArray;
 }
 
-console.log(removeDuplicates(numArray));
+console.log(removeDuplicates("javascript"));
 
 function removeDuplicatesUsingSet(numArray) {
     let uniqueArray1 = [...new Set(numArray)];

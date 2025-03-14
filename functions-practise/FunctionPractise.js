@@ -21,7 +21,7 @@ console.log(FindNum(numArray, 32));
 
 // ways to define a function
 
-//1. traditional way
+//1. traditional way  : named functions
 function addnum (a,b){
     return a+b;
 }
