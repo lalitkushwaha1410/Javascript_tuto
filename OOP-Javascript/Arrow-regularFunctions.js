@@ -13,8 +13,8 @@ function myRegularFunction(){ // regular function refers to user1 object
     console.log(`Hello ${this.name} - ${this.age}`);
 }
 
-firstname = 'Javascript'; //global scope object
-currentage = 78;
+var firstname = 'Javascript'; //global scope object
+var currentage = 78;
 const myArrowFunction = () => {  //arrow function refers to global object
   
     console.log(`Hello ${this.firstname} - ${this.currentage}`);

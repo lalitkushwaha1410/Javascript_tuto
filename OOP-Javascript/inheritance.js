@@ -51,6 +51,7 @@ mycat.makeSound();
 // super keyword - used to call the parent class method.
 // method overloading - JavaScript does not support method overloading. In JavaScript, 
 // you can define multiple methods with the same name, but the method that is defined last will override the previous methods.
+// method overloading is a feature that allows a class to have multiple methods with the same name but different parameters.
 
 class State {
     constructor(name) {
