@@ -2,7 +2,7 @@
 // Arrow functions do not have their own this. They are not well suited for defining object methods.
 // Arrow functions are not hoisted. They must be defined before they are used.
 
-// Regular functions are better for object methods.
+
 // Regular functions are hoisted.
 // Regular functions have their own this value.
 // Regular functions are better for defining object methods.

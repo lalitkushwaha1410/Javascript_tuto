@@ -12,9 +12,9 @@
  let age =33 ;
  let fname = "lalit"
 
- let aboutme = `my name is ${fname} and I am ${age} years old`;  // template string , ES6
+ let aboutme = `my name is ${fname} and I am ${age} years old`;  // template string , ES6 feature
 
- let desc = "my name is "+fname+" and my age is " + age;
+ let desc = "my name is "+fname+" and my age is " + age+" years";
 
  console.log(aboutme);
  console.log(desc);

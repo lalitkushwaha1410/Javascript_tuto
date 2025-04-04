@@ -1,7 +1,7 @@
 // console.log(title);
 
 // Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their 
-// containing scope before code
+// containing scope before the code
 // temporary dead zone is a time between the variable creation and the variable initialization.
 
 console.log(title); // undefined printed for var , but reference error for let and const

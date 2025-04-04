@@ -52,6 +52,14 @@ printName('Sai');
     console.log('I am IIFE without any argument');
 })();
 
+( function(fname){
+        console.log(`i am IIFE , name is ${fname}`);
+}) ('Lalit');
+
+// 5. Callback function - function passed as an argument to another function and executed inside that function
+
+// 6. Async function - async function is a function that returns a promise and can be used with await keyword
+
 
 // Rest parameters : when number of parameters are not known , spread operator is used to define rest parameters
 
