@@ -60,6 +60,9 @@ printName('Sai');
 
 // 6. Async function - async function is a function that returns a promise and can be used with await keyword
 
+// 7. setTimeout function - setTimeout is a built-in JavaScript function that executes a function after a specified delay in milliseconds.
+
+// 8. setInterval function - setInterval is a built-in JavaScript function that repeatedly executes a function at specified intervals in milliseconds.
 
 // Rest parameters : when number of parameters are not known , spread operator is used to define rest parameters
 

@@ -15,3 +15,5 @@ let obj2 = obj1;
 obj2.password = "5678";
 console.log(obj1);
 console.log(obj2);
+
+// javascript is by default pass by value

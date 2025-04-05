@@ -23,11 +23,12 @@
 let myPromise = new Promise((resolve, reject) => {
     let flag = true;
     if(flag){
-        setTimeout(()=>{
-            resolve('Promise is resolved');
-        },3000);
+ 
+        resolve('Promise is resolved');
+
     }
-    else{
+    else    {
+
         reject('Promise is rejected');
     }
 
