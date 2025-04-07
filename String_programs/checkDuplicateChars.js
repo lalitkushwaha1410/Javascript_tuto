@@ -8,6 +8,6 @@ let duplicates = [...new Set([...str1].filter((value, index, str1) =>
 console.log(duplicates);
 
 
-let result = [new Set([...str1].filter((value, index, str1) =>
-  str1.indexOf(value) !== index) 
-)];
+// let result = [new Set([...str1].filter((value, index, str1) =>
+//   str1.indexOf(value) !== index) 
+// )];

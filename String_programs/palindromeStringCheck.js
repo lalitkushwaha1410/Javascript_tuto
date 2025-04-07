@@ -1,3 +1,4 @@
+// palindrome are words that read the same forward and backward 
 let str1="racecar";
 
 let reverseString = str1.split('').reverse().join('');

@@ -1,4 +1,4 @@
-
+// anagrams are words or phrases that contain the same number of characters in a different order.
 function checkAnagrams(str1,str2)
 {
     let str1Sorted = str1.split('').sort().join('');
