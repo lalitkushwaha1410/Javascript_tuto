@@ -33,6 +33,6 @@
   }
   
   // Example usage:
-  let input = [1, 0, 1, 0, 1, 0];
+  let input = [1, 0,1,0, 1,1,1,0,0,1,0,1,0,1,0,1];
   let result = shiftZerosLeft(input);
   console.log(result);

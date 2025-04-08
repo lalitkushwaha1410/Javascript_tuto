@@ -1,4 +1,5 @@
-let numArray = [1,2,3,4,5,6,7,3,4,5];
+//let numArray = [1,2,3,4,5,6,7,3,4,5];
+ //let numArray = "javascript";
 
 function removeDuplicates(numArray) {
     let uniqueArray = [];
@@ -10,12 +11,13 @@ function removeDuplicates(numArray) {
     return uniqueArray;
 }
 
-//console.log(removeDuplicates("javascript"));
+//console.log(removeDuplicates(numArray));
+console.log(removeDuplicates("javascrripts"));
 
-function removeDuplicatesUsingSet(numArray) {
-    let uniqueArray1 = [...new Set(numArray)];
-    return uniqueArray1;
-}
+// function removeDuplicatesUsingSet(numArray) {
+//     let uniqueArray1 = [...new Set(numArray)];
+//     return uniqueArray1;
+// }
 
-console.log(removeDuplicatesUsingSet(numArray)); 
+// console.log(removeDuplicatesUsingSet(numArray)); 
 
