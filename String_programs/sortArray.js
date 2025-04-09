@@ -4,3 +4,4 @@ function sortArray(arr) {
 
 let numArray = [20,4,32,68,54,21,9,30];
 console.log(sortArray(numArray));
+s
