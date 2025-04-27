@@ -22,15 +22,15 @@ function countCharacters(str) {
 const result = countCharacters("jjavaascccripptt");
 console.log(result);
 
-function countOccurrences(arr) {
-  let countMap = {}; // empty object
+// function countOccurrences(arr) {
+//   let countMap = {}; // empty object
 
-  for (let item of arr) {
-      countMap[item] = (countMap[item] || 0) + 1;
-  }
+//   for (let item of arr) {
+//       countMap[item] = (countMap[item] || 0) + 1;
+//   }
 
-  return countMap;
-}
+//   return countMap;
+// }
 
-const output = countOccurrences([5,6,7,4,3,5,6,3,3,4,5]);
-console.log(output);
+// const output = countOccurrences([5,6,7,4,3,5,6,3,3,4,5]);
+// console.log(output);
