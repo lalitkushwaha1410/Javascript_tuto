@@ -3,7 +3,6 @@
 // 2. trim - removes extra spaces at start and end
 
 let str = "    Javascript ";
-
 let trimmedstr = str.trim();
 console.log(str);
 
