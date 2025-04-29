@@ -6,7 +6,7 @@ let duplicates = [...new Set([...str1].filter((value, index, str1) =>
 )];
 
 console.log(duplicates);
-
+// output : [ 6, 4, 9, 5 ]
 
 // let result = [new Set([...str1].filter((value, index, str1) =>
 //   str1.indexOf(value) !== index) 
