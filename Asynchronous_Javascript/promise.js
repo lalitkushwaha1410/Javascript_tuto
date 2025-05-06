@@ -21,7 +21,7 @@
 // PromiseResult : undefined
 
 let myPromise = new Promise((resolve, reject) => {
-    let flag = true;
+    let flag = false;
     if(flag){
  
         resolve('Promise is resolved');
@@ -34,7 +34,7 @@ let myPromise = new Promise((resolve, reject) => {
 
 });
 
-//console.log(myPromise);
+// console.log(myPromise);
 
 myPromise.then((value) => {
     console.log(value);
@@ -42,4 +42,14 @@ myPromise.then((value) => {
     console.log(error);
 });
 
+async function asyncExample() {
+    try {
+        const response = await myPromise;
+        console.log(response);
+        
+    } catch (error) {
+        console.log(error);
+    }
+}
 
+asyncExample();
