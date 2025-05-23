@@ -34,3 +34,32 @@ async function myFunc() {
 }
 
 myFunc();
+
+console.log("------------------------------------------------------------------------------")
+
+function outerFunc1 (){
+    let message1 = "I am a outer variable";
+
+    return function innerFunc1 (){
+        console.log(message1);
+    }
+}
+
+var output = outerFunc1();
+output();
+
+console.log("------------------------------------------------------------------------------")
+
+
+function greeting( name , callback) {
+    console.log(`hello ${name} !!!`);
+    callback();
+}
+
+function sayHello() {
+    console.log("Good Morning");
+}
+
+greeting("David", sayHello);
+
+console.log("------------------------------------------------------------------------------")

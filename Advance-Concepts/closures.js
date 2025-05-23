@@ -44,7 +44,7 @@ console.log(output());
 console.log('------------------------------------------------------');
 
 //A closure in JavaScript is a function that has access to the variables in its parent scope, 
-// even after the parent function has completed execution. This allows for data to be "closed over" or 
+// even after the parent function has completed execution. This allows for data to be  
 // remembered by the inner function, even after the outer function has returned.
 
 //Closures are based on lexical scoping, meaning that a function’s scope is determined by where the function is defined, not where it is executed.

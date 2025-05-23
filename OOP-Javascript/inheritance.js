@@ -81,3 +81,5 @@ class State {
 
 const mystate = new State('Uttar Pradesh');
 mystate.DifferentCity(); // it will print only the last method i.e. Varanasi because JavaScript does not support method overloading
+mystate.name = "State-Name";
+console.log(mystate.name);
