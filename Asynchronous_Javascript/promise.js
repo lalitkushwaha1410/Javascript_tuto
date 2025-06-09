@@ -21,7 +21,7 @@
 // PromiseResult : undefined
 
 let myPromise = new Promise((resolve, reject) => {
-    let flag = false;
+    let flag = true;
     if(flag){
  
         resolve('Promise is resolved');
