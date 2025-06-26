@@ -6,7 +6,7 @@
 
 console.log(title); // undefined printed for var , but reference error for let and const
 var title = 'Javascript'; 
-console.log(title);
+//console.log(title);
 // only varible declaration is hoisted not the initialization
 // that means the variable is hoisted to the top of the scope but the value is not hoisted
 // let and const are not hoisted , only var is hoisted
