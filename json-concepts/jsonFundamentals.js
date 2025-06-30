@@ -57,13 +57,20 @@ let jsonObj = {
 // console.log(jsonObj.skills[0]);
 // console.log(jsonObj.address.State);
 
+
 // jsonObj.users.forEach(user => {    // print all users name 
 //   console.log(user.name);
 // });
 
-for (let i = 0; i < jsonObj.users.length; i++) {
-  console.log(jsonObj.users[i].name);
-}
+// for (let i = 0; i < jsonObj.users.length; i++) {
+//   console.log(jsonObj.users[i].name);
+// }
+
+
+jsonObj.users[0].lastName = "Donald";
+console.log(jsonObj.users[0].lastName);
+
+
 
 // let myJsonStr = JSON.stringify(jsonObj); // convert to string type to send over network to server
 // console.log(myJsonStr);
@@ -71,5 +78,5 @@ for (let i = 0; i < jsonObj.users.length; i++) {
 // myJsonStr = myJsonStr.replace("Rohan" , "Virat"); // replace values in string
 // console.log(myJsonStr);
 
-// newJsonObj = JSON.parse(myJsonStr);
+// newJsonObj = JSON.parse(myJsonStr);  // convert string to Json Object
 // console.log(newJsonObj);
