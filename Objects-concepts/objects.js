@@ -97,7 +97,7 @@ console.log(course2.courseDetails());
 //delete course1.fees; // delete a property from the object
 
 //console.log(course1);
-
+//-------------------------------------------------------------------------------------------//
 // Object methods
 
 // 1. Object.keys() : returns an array containing the names of all the enumerable own properties of the object
@@ -108,9 +108,13 @@ console.log(course2.courseDetails());
 // console.log(Object.values(course1)); // print all the values of the object
 
 // // 3. Object.entries() : returns an array containing all the enumerable own property [key, value] pairs of the object
-
-// console.log(Object.entries(course1)); // print all the key value pairs of the object
-
+console.log("----------------------------------------------------")
+console.log(Object.entries(course1)); // print all the key value pairs of the object
+for (let [key, value] of Object.entries(course1)) {
+    console.log(`"${key}":`, value);
+  
+}
+console.log("----------------------------------------------------")
 // // 4. hasOwnProperty() : returns a boolean indicating whether the object has the specified property as its own property and not inherited from the prototype chain
 // console.log(course1.hasOwnProperty("name")); // true
 
