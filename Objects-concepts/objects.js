@@ -1,9 +1,10 @@
 // Object is an entity ( non- premitive datatype) that contains properties and methods.
 // obejcts are written with curly braces { key1 : "value" , key2: "value" } and has key value pairs
 
-// variables are used to store data values , but objects are used to store collections of data and more complex entities
+// variables are used to store data values , but objects are used to store collections of related data and more complex entities
 // varibales are used to store single values , but objects are used to store multiple values
 // variable eg : let name = "David" , let age = 25 , let city = "Agra" , let country = "India"
+// It gets messy if you have many people, because you'd need separate variables for each person.
 // but if we want to store all these values in a single entity then we can use object
 // let person = { name : "David" , age : 25 , city : "Agra" , country : "India" }
 
@@ -33,11 +34,15 @@ var car2 = {
     features: ["ABS", "Airbags", "Reverse Camera"],
 
 }
+// objects are Easy to read
+//  Easy to access: person1.name, person2.age
+//  Easy to manage lists of people
+
+let vehicle = [car1, car2];
 
 // object creation using 3 ways : 1. object literal 2. new keyword 3. object constructor
 // 1. object literal
-let
-    exampleObject = {
+let exampleObject = {
         key1: "value1",
         key2: "value2"
     };
