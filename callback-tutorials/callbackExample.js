@@ -3,6 +3,12 @@
 // excuted inside the outer function to complete some task or action
 //callback helps in asynchronous programming
 
+// Callbacks help ensure code runs in the right order, especially when dealing with tasks that 
+// complete at unpredictable times (like network requests, file reads).
+
+// JS is single-threaded. Callbacks help us execute code after a task finishes, without freezing 
+// or blocking the main thread
+
 function greeting(name, callback){
     console.log(`Hello ${name}`);
     callback();
