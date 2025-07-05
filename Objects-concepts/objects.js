@@ -138,7 +138,7 @@ console.log("###################################################################
 function keysToRemove(obj, keys) {
   const res = {}; 
   for (const key in obj) { 
-    if (!keys.includes(key)) { 
+    if (! keys.includes(key)) { 
       res[key] = obj[key]; 
     }
   }
@@ -147,4 +147,4 @@ function keysToRemove(obj, keys) {
 
 let obj = { a: 1, b: 2, c: 3 , d: 4, e: 5, f: 6};
 let keys = ['b', 'c'];
-console.log(keysToRemove(obj, keys)); // { a: 1 }
+console.log(keysToRemove(obj, keys));
