@@ -21,13 +21,19 @@ function outerFunction(){
 }
 
 const myFunction = outerFunction();
-console.log(myFunction()); // 1
-console.log(myFunction()); // 2
-console.log(myFunction()); // 3
+console.log(myFunction()); // 4
+console.log(myFunction()); // 8
+console.log(myFunction()); // 12
 // here count is private variable , it is not accessible outside the function
 // myFunction is a closure , it has access to the outer function scope even after the outer function has returned.
 
+//A closure is:
+//A function that "remembers" the variables from its outer lexical scope, even after that outer function has finished executing.
+//In this case: The inner function remembers count even after outerFunction is done.
+//count lives as long as the inner function lives (in this case, as long as myFunction exists).
+
 // example-2 of closures
+console.log("***********************************************************************************************************************************");
 
 function mutiplier(factor) {
    console.log('value of factor -',factor);
