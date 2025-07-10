@@ -1,4 +1,4 @@
-// skeleton "users" : [{} ,{} ,{} ,{}] , here users is an array of objects
+// skeleton "users" : [{} ,{} ,{} ,{}] , here users is an array of json objects
 let jsonObj = {
     "users" : [
     { 

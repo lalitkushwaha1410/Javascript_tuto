@@ -47,7 +47,7 @@ let exampleObject = {
         key2: "value2"
     };
 
-// key is always a string , if we dont provide a string then it will be converted to string
+// key is always a string , if we dont provide a string then it will be converted to string automatically
 // value can be any datatype
 // Object properties can be accessed using dot notation or bracket notation
 
