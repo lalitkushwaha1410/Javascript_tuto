@@ -1,12 +1,9 @@
-const input = "i am an engineer";
+const input = "my name is lalit";
 const vowels = ['a', 'e', 'i', 'o', 'u'];
 
-const result = input
-  .split(" ")
+const result = input.split(" ")
   .map(word => {
-    const count = word
-      .toLowerCase()
-      .split("")
+    const count = word.toLowerCase().split("")
       .filter(char => vowels.includes(char)).length;
     return count;
   }).join("");

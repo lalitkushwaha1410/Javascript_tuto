@@ -4,7 +4,7 @@ function extractParts(str) {
   let specials = '';
 
   for (let char of str) {
-    if (/[a-zA-Z]/.test(char)) {
+    if (/[a-zA-Z]/.test(char)) {   // /[a-zA-Z]/.test(char) is checking the RegExp for alphabets
       letters += char;
     } else if (/[0-9]/.test(char)) {
       numbers += char;

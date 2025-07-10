@@ -1,21 +1,22 @@
 function firstNonRepeatingChar(str) {
   for (let char of str) {
-    if (str.indexOf(char) === str.lastIndexOf(char)) {
+    if ( str.indexOf(char) === str.lastIndexOf(char) ) {
       return char;
     }
   }
-  return null;
+  return "all characters are repeating";
 }
 
-console.log(firstNonRepeatingChar("hellohe"));
+console.log(firstNonRepeatingChar("helloheo")); //
 
 // Capitalize first letter of each word
 
 function capitalizeWords(str) {
-  return str
-    .split(' ')
+  let result = str.split(' ')
     .map(word => word.charAt(0).toUpperCase() + word.slice(1))
     .join(' ');
+
+    return result;
 }
 
 console.log(capitalizeWords('my interest always lies in automation'));

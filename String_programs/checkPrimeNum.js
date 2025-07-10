@@ -8,6 +8,6 @@ function isPrime(num) {
     return "Num is prime" ;  // nmumber is prime
 }
 
-console.log(isPrime(10));
+console.log(isPrime(7));
 
 
