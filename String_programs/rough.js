@@ -1,4 +1,4 @@
-let str = "I stay in gurgaon";
+let str = "I stay in gurgaon";  // capitalize the first letter of each word using map
 
 let result = str.split(" ").map( word => word.charAt(0).toUpperCase() + word.slice(1))
         .join(" ");
@@ -7,7 +7,7 @@ console.log(result);
 
 console.log("############################################################################");
 
-function capitalizeWords(str) {
+function capitalizeWords(str) {  // capitalize the first letter of each word using for loop
     let words = str.split(" ");
     for (let i = 0; i < words.length; i++) {
         let word = words[i];
@@ -26,7 +26,7 @@ console.log(capitalized);
 
 console.log("---------------------------------------------------------------------------");
 
-function reverseEachWord(sentence) {
+function reverseEachWord(sentence) {  // reverse each word in a sentence
   let words = sentence.split(" ");
   let result = "";
   for (let word of words) {
@@ -39,7 +39,7 @@ console.log(reverseEachWord("hello world"));
 
 
 console.log("**********************************************************************************");
-const mystr = "run123test456";
+const mystr = "run123test456";   // extract numbers from a string
 const matches = mystr.match(/\d/g); // \d+ matches one or more digits
 const myresult = matches.join("");   // Join array into a single string
 console.log(myresult); // Output: "123456"
@@ -58,3 +58,24 @@ for (let word of words)
 
 
 console.log(result2);
+
+console.log("##################################################################################");
+ // Reverse each word and whole sentence in single function
+function reverseEachWord(sentence) {
+  let words = sentence.split(" ");
+  let reversedWords = [];
+
+  for (let word of words) {
+    let reversed = "";
+    for (let i = word.length - 1; i >= 0; i--) {
+      reversed += word[i];
+    }
+    reversedWords.push(reversed);
+    
+  }
+  //console.log(reversedWords.join(" "));
+  return reversedWords.reverse().join(" ");
+}
+
+const str1 = "I am travelling to Mumbai";
+console.log(reverseEachWord(str1)); // i tnaw ot nrael tpircsavaj
