@@ -46,7 +46,7 @@ console.log(myresult); // Output: "123456"
 
 console.log("##################################################################################");
 
-let testStr = "i want to learn javascript";
+let testStr = "i want to learn javascript";  // capitalize the first letter of each word using for of loop
 
 let words = testStr.split(" ");
 
