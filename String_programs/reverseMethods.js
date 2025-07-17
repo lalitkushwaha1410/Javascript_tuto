@@ -5,7 +5,7 @@ let result = str.split(" ").map( word => word.charAt(0).toUpperCase() + word.sli
 
 console.log(result);
 
-console.log("############################################################################");
+console.log("################################################################################");
 
 function capitalizeWords(str) {  // capitalize the first letter of each word using for loop
     let words = str.split(" ");
@@ -24,7 +24,7 @@ let capitalized = capitalizeWords(sentence);
 console.log(capitalized); 
 
 
-console.log("---------------------------------------------------------------------------");
+console.log("---------------------------------------------------------------------------------");
 
 function reverseEachWord(sentence) {  // reverse each word in a sentence
   let words = sentence.split(" ");
