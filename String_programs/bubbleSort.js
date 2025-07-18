@@ -29,4 +29,4 @@ function sortStringsBasic(arr) {
   return arr;
 }
 
-console.log(sortStringsBasic(["cat", "apple", "banana"])); // ["apple", "banana", "cat"]
+console.log(sortStringsBasic([4,67,32,335,865,12])); // [4, 12, 32, 67, 335, 865]
