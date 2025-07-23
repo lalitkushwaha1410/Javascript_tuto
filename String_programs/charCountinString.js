@@ -14,7 +14,13 @@ function countCharacters(str) {
       charCount[char] = (charCount[char] || 0) + 1;
   }
 
+  let result = '';
+  for (let char in charCount) {
+    result += char + charCount[char];
+  }
+
   return charCount;
+  //return result;
 }
 
 // Example usage
