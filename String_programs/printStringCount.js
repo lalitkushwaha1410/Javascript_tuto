@@ -3,7 +3,7 @@ function encodeConsecutiveChars(str) {
     let count = 1;
 
     for (let i = 1; i <= str.length; i++) {
-        if (str[i] === str[i - 1]) {
+        if (str[i - 1] === str[i]) {
             count++;
         } else {
             result += count + str[i - 1];
