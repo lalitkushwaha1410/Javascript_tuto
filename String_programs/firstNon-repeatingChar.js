@@ -1,13 +1,13 @@
 function firstNonRepeatingChar(str) {
   for (let char of str) {
     if ( str.indexOf(char) === str.lastIndexOf(char) ) {
-      return char;
+      return "Non-Repeating Character: "+char;
     }
   }
   return "all characters are repeating";
 }
 
-console.log(firstNonRepeatingChar("helloheo")); //
+console.log(firstNonRepeatingChar("hello")); //
 
 // Capitalize first letter of each word
 

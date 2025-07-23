@@ -26,7 +26,9 @@ function sortStringsBasic(arr) {
       }
     }
   }
-  return arr;
+  //return arr[arr.length-2]; // return the second largest element
+  //return arr[arr.length-1]; // return the largest element
+  return arr; // return the sorted array
 }
 
 console.log("Sorted Number Array :",sortStringsBasic([4,67,32,335,865,12])); // [4, 12, 32, 67, 335, 865]
