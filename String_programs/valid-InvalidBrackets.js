@@ -3,7 +3,8 @@ function isValidBracketString(str) {
     do {
         prevStr = str;
         str = str.replace("()", "").replace("{}", "").replace("[]", "");
-    } while (str !== prevStr);
+    } 
+    while (str !== prevStr);
     
     return str.length === 0;
 }
