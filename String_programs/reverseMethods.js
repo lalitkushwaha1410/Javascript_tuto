@@ -74,8 +74,8 @@ function reverseEachWord(sentence) {
     reversedWords.push(reversed);
     
   }
-  //console.log(reversedWords.join(" "));
-  return reversedWords.reverse().join(" ");
+  return reversedWords.join(" ");
+  //return reversedWords.reverse().join(" ");
 }
 
 const str1 = "I am travelling to Mumbai";
