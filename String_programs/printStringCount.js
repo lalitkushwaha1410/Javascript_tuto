@@ -15,6 +15,6 @@ function encodeConsecutiveChars(str) {
 }
 
 // Example
-let input = "eeffhhhieee";
+let input = "eeffffhhhzzzieee";
 let output = encodeConsecutiveChars(input);
 console.log(output); // Output: 2e2f3h1i3e
