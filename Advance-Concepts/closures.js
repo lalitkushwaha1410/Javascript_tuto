@@ -2,7 +2,8 @@
 // closures is function inside a function that relies on variables in the outer function.
 // closure is combination of a function and their lexical environment within which the function was declared.
 
-// why need closures? // to maintain state of a function , to maintain private variables , data encapsulation ,data hiding
+// why need closures? // 
+// to maintain state of a function , to maintain private variables , data encapsulation ,data hiding
 // closures are used to create private variables in javascript.
 //“closure” is a fundamental concept that arises from the combination of functions and lexical scoping.
 //  A closure allows a function to retain access to variables from its outer (enclosing) scope even after that outer scope has finished executing. 
