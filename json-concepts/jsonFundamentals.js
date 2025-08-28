@@ -1,4 +1,5 @@
 // skeleton "users" : [{} ,{} ,{} ,{}] , here users is an array of json objects
+// [{}, {}, {}]
 let jsonObj = {
     "users" : [
     { 
@@ -53,8 +54,10 @@ let jsonObj = {
     }
 
 
- console.log(jsonObj);
-  console.log(jsonObj.users[0].Food);
+console.log(jsonObj);
+console.log(jsonObj.users[0].Food);
+console.log("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+  
 // console.log(jsonObj.skills[0]);
 // console.log(jsonObj.address.State);
 

@@ -22,7 +22,7 @@ extractParts("dsfdsf45678#$#@");
 
 console.log("---------------------------------------------------------------------------------------------------------");
 
-const str = "dsfdsf45678#$#@";
+const str = "dsf34535dsf45678#$#@";
 
 const letters = str.split('').filter(c => /[a-zA-Z]/.test(c)).join('');
 const numbers = str.split('').filter(c => /[0-9]/.test(c)).join('');

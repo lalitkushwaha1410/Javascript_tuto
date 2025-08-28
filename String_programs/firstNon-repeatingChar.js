@@ -7,7 +7,7 @@ function firstNonRepeatingChar(str) {
   return "all characters are repeating";
 }
 
-console.log(firstNonRepeatingChar("hello")); //
+console.log(firstNonRepeatingChar("typescript")); //
 
 // Capitalize first letter of each word
 

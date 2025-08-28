@@ -8,4 +8,4 @@ const result = input.split(" ")
     return count;
   }).join("");
 
-console.log(result); // Output: 1114
+console.log(result); // Output: 0212

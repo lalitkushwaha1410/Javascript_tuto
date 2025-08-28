@@ -17,6 +17,8 @@ let numbers = [49,2,8,12,19];
 console.log("Sorted array:", bubbleSort(numbers));
 
 function sortStringsBasic(arr) {
+  let secondLargest = arr.length-2;
+  
   for (let i = 0; i < arr.length; i++) {
     for (let j = 0; j < arr.length; j++) {
       if (arr[j] > arr[j+1]) {
@@ -26,7 +28,7 @@ function sortStringsBasic(arr) {
       }
     }
   }
-  //return arr[arr.length-2]; // return the second largest element
+  //return arr[secondLargest]; // return the second largest element
   //return arr[arr.length-1]; // return the largest element
   return arr; // return the sorted array
 }

@@ -47,6 +47,8 @@ let exampleObject = {
         key2: "value2"
     };
 
+    console.log("EEEEEEEEEEEEE" ,exampleObject.key1);
+    
 // key is always a string , if we dont provide a string then it will be converted to string automatically
 // value can be any datatype
 // Object properties can be accessed using dot notation or bracket notation
@@ -87,9 +89,14 @@ function Course(name, duration, fees) {
     }
 }
 
+console.log("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+
+
 var course1 = new Course("Javascript", "3 months", "30000");
 var course2 = new Course("Python", "2 months", "20000");
 var course3 = new Course("Java", "4 months", "40000");
+
+console.log(course1.name);
 
 console.log(course1.courseDetails());
 console.log(course2.courseDetails());
@@ -116,13 +123,13 @@ console.log("----------------------------------------------------")
 // console.log(course1.hasOwnProperty("name")); // true
 
 
-// 5. freeze() : The Object.freeze() method freezes an object. A frozen object can no longer be changed; freezing an object prevents new properties from being added to it, 
+// 5. freeze() : The Object.freeze() method freezes an object. cant add or delete new property, cant modify property 
 // existing properties
 console.log(Object.freeze(course1));
 
 // console.log(Object.isFrozen(course1)); // false
 
-// 6. seal() : The Object.seal() method seals an object, preventing new properties from being added or deleted, allowed to modify values of the property.
+// 6. seal() : The Object.seal() method seals an object, cant add /delete new property, only allowed to modify exisiting value of the property.
 
 console.log(Object.seal(course1));
 
