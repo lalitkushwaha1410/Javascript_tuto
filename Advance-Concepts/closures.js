@@ -54,8 +54,9 @@ console.log('------------------------------------------------------');
 // even after the parent function has completed execution. This allows for data to be  
 // remembered by the inner function, even after the outer function has returned.
 
-//Closures are based on lexical scoping, meaning that a function’s scope is determined by where the function is defined, not where it is executed.
-// This allows inner functions to access variables from their outer function.
+//Closures are based on lexical scoping, meaning that a function’s scope is determined by 
+// where the function is defined, not where it is executed.
+//This allows inner functions to access variables from their outer function.
 
 
 // example-3 of closures
