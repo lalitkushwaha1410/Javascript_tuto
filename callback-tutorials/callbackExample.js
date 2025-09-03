@@ -1,7 +1,7 @@
 // callback function
 // callback function is a function that is passed as an argument to another function which is then 
 // excuted inside the outer function to complete some task or action
-//callback helps in asynchronous programming
+// callback helps in asynchronous programming
 
 // Callbacks help ensure code runs in the right order, especially when dealing with tasks that 
 // complete at unpredictable times (like network requests, file reads).

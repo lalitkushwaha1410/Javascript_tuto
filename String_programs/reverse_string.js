@@ -33,7 +33,7 @@ function reverseEachWord(sentence) {
 }
 
 // Example usage
-const input = "Hello World from ChatGPT";
+const input = "Hello World from Noida";
 const output = reverseEachWord(input);
 console.log(output); // "olleH dlroW morf TPGTahC"
 
