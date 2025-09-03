@@ -50,7 +50,7 @@ console.log(output());
 
 console.log('------------------------------------------------------');
 
-//A closure in JavaScript is a function that has access to the variables in its parent scope, 
+// A closure in JavaScript is a function that has access to the variables in its parent scope, 
 // even after the parent function has completed execution. This allows for data to be  
 // remembered by the inner function, even after the outer function has returned.
 
