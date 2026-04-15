@@ -1,4 +1,4 @@
-const input = "my name is lalit";
+const input = "my name is peter";
 const vowels = ['a', 'e', 'i', 'o', 'u'];
 
 const result = input.split(" ")

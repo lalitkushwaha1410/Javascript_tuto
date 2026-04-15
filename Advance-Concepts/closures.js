@@ -25,7 +25,7 @@ const myFunction = outerFunction();
 console.log(myFunction()); // 4
 console.log(myFunction()); // 8
 console.log(myFunction()); // 12
-// here count is private variable , it is not accessible outside the function
+// here count is private variable ,it is not accessible outside the function
 // myFunction is a closure , it has access to the outer function scope even after the outer function has returned.
 
 //A closure is:
@@ -55,7 +55,7 @@ console.log('------------------------------------------------------');
 // remembered by the inner function, even after the outer function has returned.
 
 //Closures are based on lexical scoping, meaning that a function’s scope is determined by 
-// where the function is defined, not where it is executed.
+//where the function is defined, not where it is executed.
 //This allows inner functions to access variables from their outer function.
 
 
