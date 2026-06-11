@@ -45,7 +45,7 @@ function mutiplier(factor) {
         return x*factor;
     }
 }
-const output = new mutiplier(3);
+const output = mutiplier(3);
 console.log(output()); 
 
 console.log('------------------------------------------------------');
@@ -62,9 +62,10 @@ console.log('------------------------------------------------------');
 // example-3 of closures
 
 function outerFunction1(){
-     const  outerVar = 'I am outer variable';
+     let  outerVar = 'I am outer variable';
 
     return function innerFunction1(){
+        //let outerVar = "Inside inner function";
          console.log(outerVar);
          
     }

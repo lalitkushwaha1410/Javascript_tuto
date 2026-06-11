@@ -22,6 +22,6 @@ finally {
 console.log("print this message after error handling");
 
 
-console.log(1<2<3);
-console.log(1>2>3);
+// console.log(1<2<3);
+// console.log(1>2>3);
 

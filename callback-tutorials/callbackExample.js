@@ -22,6 +22,11 @@ greeting('Ankur', sayGoodbye);
 
 console.log('----------------------------------------------------------------------------------------------------------------------------');
 
+// callback another example :
+
+
+
+
 // next example for callback function with settimeout
 
 function fetchData(callback){
