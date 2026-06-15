@@ -10,3 +10,21 @@ var title = 'Javascript';
 // only varible declaration is hoisted not the initialization
 // that means the variable is hoisted to the top of the scope but the value is not hoisted
 // let and const are not hoisted , only var is hoisted
+
+
+init();
+
+function init() {
+  console.log("App started");
+}
+
+
+// Why useful:
+
+// You can write high-level logic at the top
+// Keep helper functions at the bottom (clean architecture)
+
+// 👉 Very useful in:
+
+// API initialization
+// Test setup blocks (you’ll relate in QA automation setups)
