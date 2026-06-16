@@ -94,23 +94,53 @@
 let numArray  = [10,20,30];
 
 function getData(){ 
-    var output ;
+    
     setTimeout(() => {
         numArray.forEach((num,index) => {
            //output = num;
            console.log(num); 
         })
-    }, 200);
+    }, 1000);
 
 }
+ // Callback
+// function addNum( newNum, callback){
+//     setTimeout(() => {
+//         numArray.push(newNum);
+//         callback();
+//     }, 500);
+// }
 
-function addNum( newNum, callback){
-    setTimeout(() => {
-        numArray.push(newNum);
-        callback();
-    }, 500);
+// addNum(40 , getData);
+
+
+// Promise 
+
+function addNum (newNum) {
+    return new Promise ( (resolve,reject) => {
+        setTimeout(() => {
+            numArray.push(newNum);
+            let error = false;
+            if(!error){
+                resolve("Number added successfully");
+            }
+            else {
+                reject("Error comes");
+            }
+         }, 2000);
+    })
 }
 
-addNum(40 , getData);
+// addNum(50).then((value) => {
+//     getData();
+//     console.log(value);
+// }).catch((err) => console.log(err));
 
+// Async Await example
 
+async function start(){
+    await addNum(70);
+    getData();
+}
+
+start();
