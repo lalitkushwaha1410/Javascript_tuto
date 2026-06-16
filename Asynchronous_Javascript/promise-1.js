@@ -35,7 +35,7 @@ async function myFunc() {
 
 myFunc();
 
-console.log("------------------------------------------------------------------------------")
+console.log("------------------------CLOSURE------------------------------------------------------")
 
 function outerFunc1 (){
     let message1 = "I am a outer variable";
@@ -48,7 +48,7 @@ function outerFunc1 (){
 var output = outerFunc1();
 output();
 
-console.log("------------------------------------------------------------------------------")
+console.log("---------------------CALLBACK---------------------------------------------------------")
 
 
 function greeting( name , callback) {
