@@ -41,25 +41,76 @@
 // });
 
 // example -3
-const items = ['bat' , 'stumps', 'shoes', 'gloves'];
+// const items = ['bat' , 'stumps', 'shoes', 'gloves'];
 
-let myPromise = new Promise((resolve, reject) => {
-    if(items.includes('bat') && items.includes('ball') && items.includes('stumps')){
-        resolve('We can play cricket');
-    }
-    else{
-        reject('Some items are missing to play cricket');
-    }
+// let myPromise = new Promise((resolve, reject) => {
+//     if(items.includes('bat') && items.includes('ball') && items.includes('stumps')){
+//         resolve('We can play cricket');
+//     }
+//     else{
+//         reject('Some items are missing to play cricket');
+//     }
 
-});
+// });
 
-async function PlayCricket() {
-    try {
-        const result = await myPromise;
-        console.log(result);
-    } catch (error) {
-        console.log(error);
-    }
+// async function PlayCricket() {
+//     try {
+//         const result = await myPromise;
+//         console.log(result);
+//     } catch (error) {
+//         console.log(error);
+//     }
+// }
+
+// PlayCricket();
+
+// console.log("####################################################################################")
+
+// let numArray  = [10,20,30];
+
+// function getData(){ 
+//     var output ;
+//     setTimeout(() => {
+//         numArray.forEach((num,index) => {
+//            //output = num;
+//            console.log(num); 
+//         })
+//     }, 5000);
+
+// }
+
+// function addNum( newNum){
+//     setTimeout(() => {
+//         numArray.push(newNum)
+//     }, 3000);
+// }
+
+// addNum(40);
+// getData();
+
+// Callback use
+
+
+let numArray  = [10,20,30];
+
+function getData(){ 
+    var output ;
+    setTimeout(() => {
+        numArray.forEach((num,index) => {
+           //output = num;
+           console.log(num); 
+        })
+    }, 200);
+
 }
 
-PlayCricket();
+function addNum( newNum, callback){
+    setTimeout(() => {
+        numArray.push(newNum);
+        callback();
+    }, 500);
+}
+
+addNum(40 , getData);
+
+
