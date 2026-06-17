@@ -18,6 +18,10 @@ function init() {
   console.log("App started");
 }
 
+let store = null ;
+
+console.log(typeof store);
+
 
 // Why useful:
 
