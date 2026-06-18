@@ -12,3 +12,10 @@ console.log(duplicates);
 // let result = [new Set([...str1].filter((value, index, str1) =>
 //   str1.indexOf(value) !== index) 
 // )];
+
+// let str1 = [4,6,3,6,9,2,4,7,5,8,9,5];
+// let uniques = [...new Set(str1.filter((ele, index, str1) => 
+//   str1.indexOf(ele) === index ) // will give all uniques
+// )];
+
+// console.log(uniques);
