@@ -8,6 +8,13 @@
 // but if we want to store all these values in a single entity then we can use object
 // let person = { name : "David" , age : 25 , city : "Agra" , country : "India" }
 
+// let persons = [
+//   { name: "David", age: 25, city: "Agra", country: "India" },
+//   { name: "John", age: 30, city: "Delhi", country: "India" },
+//   { name: "Sara", age: 28, city: "Mumbai", country: "India" }
+// ];
+
+
 var car1 = {
     name: "Hyundai Aura",
     color: "White",
