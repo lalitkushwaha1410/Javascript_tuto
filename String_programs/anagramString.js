@@ -15,3 +15,7 @@ function checkAnagrams(str1,str2)
 let str1 = "listen";
 let str2 = "silent";
 checkAnagrams(str1,str2);
+
+let myStr = "Javascript";
+
+console.log("myStr = ", myStr.toLowerCase().split('').sort().join(''));

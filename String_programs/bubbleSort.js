@@ -34,3 +34,38 @@ function sortStringsBasic(arr) {
 }
 
 console.log("Sorted Number Array :",sortStringsBasic([4,67,32,335,865,12])); // [4, 12, 32, 67, 335, 865]
+
+console.log( " %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ")
+
+function numSort (arr) {
+    let n = arr.length ;
+    
+
+    for (let i = 0 ; i < n ; i++) {
+        for (let j =0 ; j < n-i-1; j++) {
+            if (arr[j] > arr[j+1])
+            {
+                temp = arr[j];
+                arr[j] = arr[j+1];
+                arr[j+1] = temp ;
+            }
+        }
+    }
+    
+   let largest = arr[n - 1];
+
+    for (let i = n - 2; i >= 0; i--) {
+        if (arr[i] < largest) {
+            return arr[i];
+        }
+    }
+
+    return null; // if no second largest
+
+    // let secondlargest = arr.length-2;
+    // //return arr ;
+    // return arr[secondlargest];
+}
+
+let numArray = [5,10,15,20,25,30,30];
+console.log(numSort(numArray));
