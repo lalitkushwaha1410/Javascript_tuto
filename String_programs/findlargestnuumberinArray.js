@@ -9,5 +9,5 @@ function largestNumber(arr){
     return largest;
 }
 
-let numArray = [4,7,765,78,54,190,34,87];
+let numArray = [2365,7,765,78,54,190,34,87];
 console.log(largestNumber(numArray));
