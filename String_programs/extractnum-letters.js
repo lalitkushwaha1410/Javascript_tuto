@@ -4,9 +4,9 @@ function extractParts(str) {
   let specials = '';
 
   for (let char of str) {
-    if (/[a-zA-Z]/.test(char)) {   // /[a-zA-Z]/.test(char) is checking the RegExp for alphabets
+    if ((/[a-zA-Z]/).test(char)) {   // /[a-zA-Z]/.test(char) is checking the RegExp for alphabets
       letters += char;
-    } else if (/[0-9]/.test(char)) {
+    } else if ((/[0-9]/).test(char)) {
       numbers += char;
     } else {
       specials += char;
@@ -18,7 +18,7 @@ function extractParts(str) {
   console.log("Special Characters:", specials);
 }
 
-extractParts("dsfdsf45678#$#@");
+extractParts("dsfdsf45678#$#@fefe564%#$%#");
 
 console.log("---------------------------------------------------------------------------------------------------------");
 
