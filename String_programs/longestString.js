@@ -10,4 +10,4 @@ function findLongestWord(sentence) {
 }
 
 let sentence = "find the longest word in the sentence";
-console.log(findLongestWord(sentence)); 
+console.log(findLongestWord(sentence));
