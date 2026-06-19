@@ -1,6 +1,6 @@
 // print duplicate characters in an array
 //let str1 = "occurence";
-let str1 = [4,6,3,6,9,2,4,7,5,8,9,5];
+let str1 = [4,6,3,6,9,2,4,7,5,8,9,,6,6,6,5];
 let duplicates = [...new Set(str1.filter((ele, index, str1) => 
   str1.indexOf(ele) !== index )
 )];
