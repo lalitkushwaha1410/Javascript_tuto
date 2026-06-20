@@ -24,7 +24,7 @@ let capitalized = capitalizeWords(sentence);
 console.log(capitalized); 
 
 
-console.log("---------------------------------------------------------------------------------");
+console.log("--------------------------------------------------------------------------------------------------------");
 
 function reverseEachWord(sentence) {  // reverse each word in a sentence
   let words = sentence.split(" ");
