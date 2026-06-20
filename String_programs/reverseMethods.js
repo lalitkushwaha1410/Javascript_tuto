@@ -61,22 +61,39 @@ console.log(result2);
 
 console.log("##################################################################################");
  // Reverse each word and whole sentence in single function
-function reverseEachWord(sentence) {
-  let words = sentence.split(" ");
-  let reversedWords = [];
+function reverseWord (arr) {
+        let words = arr.split(" ");
+        let reserveWords = [];
 
-  for (let word of words) {
-    let reversed = "";
-    for (let i = word.length - 1; i >= 0; i--) {
-      reversed += word[i];
+        for (let word of words) {
+            let result = "";
+            for ( let i = word.length-1; i>=0; i--){
+                result = result + word[i];
+            }
+            reserveWords.push(result);
+        }
+        
+let finalResult = [];
+    for (let i = reserveWords.length - 1; i >= 0; i--) {
+        finalResult.push(reserveWords[i]);
     }
-    
-    reversedWords.push(reversed);
-    
-  }
-  return reversedWords.join(" ");
-  //return reversedWords.reverse().join(" ");
+
+    return finalResult.join(" ");
+       
+       
 }
 
-const str1 = "I am travelling to Mumbai";
-console.log(reverseEachWord(str1)); // i tnaw ot nrael tpircsavaj
+let str = "hello world from noida";
+
+console.log(reverseWord(str));
+// -------------------------------------------------------------------------------------------------------//
+
+function reverseWord(str) {
+    return str
+        .split(" ")
+        .map(word => word.split("").reverse().join(""))
+        .reverse()
+        .join(" ");
+}
+
+console.log(reverseWord("hello world from noida"));

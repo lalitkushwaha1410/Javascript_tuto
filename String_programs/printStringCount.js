@@ -3,9 +3,11 @@ function encodeConsecutiveChars(str) {
     let count = 1;
 
     for (let i = 1; i <= str.length; i++) {
-        if (str[i - 1] === str[i]) {
-            count++;
-        } else {
+        if (str[i - 1] === str[i])
+             {
+            count++; 
+        }     
+        else {
             result += count + str[i - 1];
             count = 1;
         }
@@ -15,6 +17,6 @@ function encodeConsecutiveChars(str) {
 }
 
 // Example
-let input = "eeffffhhhzzzieee";
+let input = "eeffffhieee";
 let output = encodeConsecutiveChars(input);
-console.log(output); // Output: 2e2f3h1i3e
+console.log(output); // Output: 2e4f1h1i3e  

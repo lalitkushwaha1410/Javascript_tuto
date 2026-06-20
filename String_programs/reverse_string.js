@@ -37,3 +37,20 @@ const input = "Hello World from Noida";
 const output = reverseEachWord(input);
 console.log(output); // "olleH dlroW morf TPGTahC"
 
+function reverseWord (arr) {
+        let words = arr.split(" ");
+        let reserveWords = [];
+
+        for (let word of words) {
+            let result = "";
+            for ( let i = word.length-1; i>=0; i--){
+                result = result + word[i];
+            }
+            reserveWords.push(result);
+        }
+        return reserveWords.join(" ");
+}
+
+let str = "hello world from noida";
+
+console.log(reverseWord(str));
