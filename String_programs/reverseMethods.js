@@ -39,10 +39,14 @@ console.log(reverseEachWord("hello world"));
 
 
 console.log("**********************************************************************************");
-const mystr = "run123test456";   // extract numbers from a string
-const matches = mystr.match(/\d/g); // \d+ matches one or more digits
+const mystr = "run123te$@$@!!##@st456";   // extract numbers from a string
+const matches = mystr.match(/[0-9]/g);
+const special = mystr.match(/[^a-zA-Z0-9]/g);
+const myspec = special.join(""); // \d+ matches one or more digits
 const myresult = matches.join("");   // Join array into a single string
 console.log(myresult); // Output: "123456"
+console.log(myspec);
+
 
 console.log("##################################################################################");
 
@@ -83,9 +87,9 @@ let finalResult = [];
        
 }
 
-let str = "hello world from noida";
+let str4 = "hello world from noida";
 
-console.log(reverseWord(str));
+console.log(reverseWord(str4));
 // -------------------------------------------------------------------------------------------------------//
 
 function reverseWord(str) {
