@@ -28,8 +28,8 @@
         arr[i] = 1; // Fill with 1s
       }
     }
-  
     return arr;
+    //return arr.join("");
   }
   
   // Example usage:
