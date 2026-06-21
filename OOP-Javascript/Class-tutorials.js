@@ -18,6 +18,7 @@ class Person {
     greet() { // method of class
         console.log(`Hello ${this.name} - Age :${this.age}`);
     }
+    
 }
 const P1 = new Person('Ankit', 43);
 P1.greet();
