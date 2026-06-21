@@ -14,6 +14,7 @@ class Person {
         this.name = name;
         this.age = age;
     }
+    
     greet() { // method of class
         console.log(`Hello ${this.name} - Age :${this.age}`);
     }
