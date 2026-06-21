@@ -1,6 +1,7 @@
 // Class provides a way to create objects with some initial values and methods to manipulate those values.
 // is is used to create objects and methods more easily.
 // useful for encapsulation and inheritance.
+//  class contains propertiea and methods .
 // promotes reusability, maintainability and object-oriented programming.
 // encapsulation - the bundling of data and methods that operate on that data within one unit, such as a class in JavaScript.
 // encapsulation is a way to restrict access to certain details of an object and only expose the necessary parts of it.
