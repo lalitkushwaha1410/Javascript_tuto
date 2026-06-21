@@ -58,8 +58,8 @@ console.log(jsonObj);
 console.log(jsonObj.users[0].Food);
 console.log("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
   
-// console.log(jsonObj.skills[0]);
-// console.log(jsonObj.address.State);
+//console.log(jsonObj.skills[0]);
+//console.log(jsonObj.address.State);
 
 
 // jsonObj.users.forEach(user => {    // print all users name 
