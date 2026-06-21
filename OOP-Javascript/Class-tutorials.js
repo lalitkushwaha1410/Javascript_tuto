@@ -18,13 +18,13 @@ class Person {
     greet() { // method of class
         console.log(`Hello ${this.name} - Age :${this.age}`);
     }
-    
+
 }
 const P1 = new Person('Ankit', 43);
 P1.greet();
 
 //Static methods
-//Static methods are called without instantiating their class and cannot be called through a class instance.
+//Static methods are called without instantiating their class and cannot be called through a class instance.No need for objects for calling.
 
 class MathOperations {
     static add(a, b) {
