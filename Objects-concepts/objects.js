@@ -55,6 +55,7 @@ let exampleObject = {
 };
 
 console.log("EEEEEEEEEEEEE", exampleObject.key1);
+console.log("WWWWWWWWWWWW", exampleObject["key2"]);
 
 // key is always a string , if we dont provide a string then it will be converted to string automatically
 // value can be any datatype
@@ -67,6 +68,7 @@ car1.topSpeed();
 console.log(car2["name"]); // print only name of the car
 car1.model = "sedan"; // add new property to the object
 
+console.log("-------------------------- new Keyword----------------------------------")
 // 2. Object using new keyword
 
 var myDetail = new Object();
