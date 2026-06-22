@@ -123,7 +123,7 @@ console.log(course2.courseDetails());
 
 // console.log(Object.values(course1)); // print all the values of the object
 
-// // 3. Object.entries() : returns an array containing all the enumerable own property [key, value] pairs of the object
+// 3. Object.entries() : returns an array containing all the enumerable own property [key, value] pairs of the object
 console.log("----------------------------------------------------")
 console.log(Object.entries(course1)); // print all the key value pairs of the object
 
