@@ -50,12 +50,12 @@ let vehicle = [car1, car2];
 // object creation using 3 ways : 1. object literal 2. new keyword 3. object constructor
 // 1. object literal
 let exampleObject = {
-        key1: "value1",
-        key2: "value2"
-    };
+    key1: "value1",
+    key2: "value2"
+};
 
-    console.log("EEEEEEEEEEEEE" ,exampleObject.key1);
-    
+console.log("EEEEEEEEEEEEE", exampleObject.key1);
+
 // key is always a string , if we dont provide a string then it will be converted to string automatically
 // value can be any datatype
 // Object properties can be accessed using dot notation or bracket notation
@@ -144,21 +144,21 @@ console.log(Object.seal(course1));
 
 for (let key in course1) {
     console.log(key + " : " + course1[key]);
-    
+
 }
 
 console.log("########################################################################################################")
 
 function keysToRemove(obj, keys) {
-  const res = {}; 
-  for (const key in obj) { 
-    if (! keys.includes(key)) { 
-      res[key] = obj[key]; 
+    const res = {};
+    for (const key in obj) {
+        if (!keys.includes(key)) {
+            res[key] = obj[key];
+        }
     }
-  }
-  return res;
+    return res;
 }
 
-let obj = { a: 1, b: 2, c: 3 , d: 4, e: 5, f: 6};
+let obj = { a: 1, b: 2, c: 3, d: 4, e: 5, f: 6 };
 let keys = ['b', 'c'];
 console.log(keysToRemove(obj, keys));
