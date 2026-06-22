@@ -143,7 +143,7 @@ console.log(Object.freeze(course1));
 console.log(Object.seal(course1));
 
 // 7. for in loop : The for...in statement iterates over all enumerable properties of an object that are keyed by strings
-
+console.log("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
 for (let key in course1) {
     console.log(key + " : " + course1[key]);
 
