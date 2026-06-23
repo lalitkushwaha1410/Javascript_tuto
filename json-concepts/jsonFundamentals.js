@@ -1,63 +1,65 @@
 // skeleton "users" : [{} ,{} ,{} ,{}] , here users is an array of json objects
 // [{}, {}, {}]
 let jsonObj = {
-    "users" : [
-    { 
-        "name" : "Rohit",
-        "channel" : "Discovery",
-        "friend" : "David",
-        "Food" : "Pizza",
-        "skills" : ["html" , "java", "python"],
-        "address" : {
-            "city" :"Pune",
-            "State" : "Maharashtra",
-            "Country" : "India"
-        } 
-    },
-    {
-         "name" : "Virat",
-        "channel" : "Zee cinema",
-        "friend" : "David",
-        "Food" : "Momoz",
-        "skills" : ["html" , "java", "python"],
-        "address" : {
-            "city" :"Pune",
-            "State" : "Maharashtra",
-            "Country" : "India"
-        } 
-    },
-    { "name" : "Abhimanyu",
-        "channel" : "AAJtak",
-        "friend" : "David",
-        "Food" : "Fruits",
-        "skills" : ["html" , "java", "python"],
-        "address" : {
-            "city" :"Agra",
-            "State" : "Uttar Pradesh",
-            "Country" : "India"
-        } 
-    } , 
-        
-    { "name" : "Saurabh",
-        "channel" : "Sony",
-        "friend" : "David",
-        "Food" : "Coke",
-        "skills" : ["html" , "java", "python"],
-        "address" : {
-            "city" :"Ahmedabad",
-            "State" : "Gujarat",
-            "Country" : "India"
-        } 
-    } 
-]
-    
-    }
+    "users": [
+        {
+            "name": "Rohit",
+            "channel": "Discovery",
+            "friend": "David",
+            "Food": "Pizza",
+            "skills": ["html", "java", "python"],
+            "address": {
+                "city": "Pune",
+                "State": "Maharashtra",
+                "Country": "India"
+            }
+        },
+        {
+            "name": "Virat",
+            "channel": "Zee cinema",
+            "friend": "David",
+            "Food": "Momoz",
+            "skills": ["html", "java", "python"],
+            "address": {
+                "city": "Pune",
+                "State": "Maharashtra",
+                "Country": "India"
+            }
+        },
+        {
+            "name": "Abhimanyu",
+            "channel": "AAJtak",
+            "friend": "David",
+            "Food": "Fruits",
+            "skills": ["html", "java", "python"],
+            "address": {
+                "city": "Agra",
+                "State": "Uttar Pradesh",
+                "Country": "India"
+            }
+        },
+
+        {
+            "name": "Saurabh",
+            "channel": "Sony",
+            "friend": "David",
+            "Food": "Coke",
+            "skills": ["html", "java", "python"],
+            "address": {
+                "city": "Ahmedabad",
+                "State": "Gujarat",
+                "Country": "India"
+            }
+        }
+    ]
+
+}
 
 
 console.log(jsonObj);
 console.log(jsonObj.users[0].Food);
 console.log("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
-  
+
 //console.log(jsonObj.skills[0]);
 //console.log(jsonObj.address.State);
 
@@ -73,7 +75,6 @@ console.log("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
 
 jsonObj.users[0].lastName = "Donald";
 console.log(jsonObj.users[0].lastName);
-
 
 
 // let myJsonStr = JSON.stringify(jsonObj); // convert to string type to send over network to server
