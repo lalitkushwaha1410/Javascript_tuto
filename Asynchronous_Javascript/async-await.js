@@ -29,7 +29,7 @@
 //         const response = await fetch("Asynchronous_Javascript/student_data.json");
 //         const students = await response.json();
 //         return students;
-        
+
 //     } catch (error) {
 //         console.log(error);
 //     }
@@ -91,19 +91,19 @@
 // Callback use
 
 
-let numArray  = [10,20,30];
+let numArray = [10, 20, 30];
 
-function getData(){ 
-    
+function getData() {
+
     setTimeout(() => {
-        numArray.forEach((num,index) => {
-           //output = num;
-           console.log(num); 
+        numArray.forEach((num, index) => {
+            //output = num;
+            console.log(num);
         })
     }, 1000);
 
 }
- // Callback
+// Callback
 // function addNum( newNum, callback){
 //     setTimeout(() => {
 //         numArray.push(newNum);
@@ -116,18 +116,18 @@ function getData(){
 
 // Promise 
 
-function addNum (newNum) {
-    return new Promise ( (resolve,reject) => {
+function addNum(newNum) {
+    return new Promise((resolve, reject) => {
         setTimeout(() => {
             numArray.push(newNum);
             let error = false;
-            if(!error){
+            if (!error) {
                 resolve("Number added successfully");
             }
             else {
                 reject("Error comes");
             }
-         }, 2000);
+        }, 2000);
     })
 }
 
@@ -138,7 +138,7 @@ function addNum (newNum) {
 
 // Async Await example
 
-async function start(){
+async function start() {
     await addNum(70);
     getData();
 }
