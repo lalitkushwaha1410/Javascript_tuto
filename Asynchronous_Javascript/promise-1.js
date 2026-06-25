@@ -1,21 +1,21 @@
- let mypromise = new Promise ((resolve,reject) => {
+let mypromise = new Promise((resolve, reject) => {
 
-    let flag = true ;
+    let flag = true;
 
-    if(flag){
+    if (flag) {
 
         resolve("promise is resolved");
 
     }
-    else{
+    else {
 
         reject("promise is rejected");
 
     }
 
- });
+});
 
-mypromise.then((message) =>{
+mypromise.then((message) => {
     console.log(message);
 }).catch((error) => {
     console.log(error);
@@ -24,23 +24,23 @@ mypromise.then((message) =>{
 
 async function myFunc() {
 
-    try {  
-        let value = await mypromise ;
+    try {
+        let value = await mypromise;
         console.log(value);
     } catch (error) {
         console.log(error);
     }
-    
+
 }
 
 myFunc();
 
 console.log("------------------------CLOSURE------------------------------------------------------")
 
-function outerFunc1 (){
+function outerFunc1() {
     let message1 = "I am a outer variable";
 
-    return function innerFunc1 (){
+    return function innerFunc1() {
         console.log(message1);
     }
 }
@@ -51,7 +51,7 @@ output();
 console.log("---------------------CALLBACK---------------------------------------------------------")
 
 
-function greeting( name , callback) {
+function greeting(name, callback) {
     console.log(`hello ${name} !!!`);
     callback();
 }
