@@ -1,7 +1,12 @@
 let a = 10;
 let b = a;
+console.log("Before Update");
+console.log(a);
+console.log(b);
 
 a = a + 5;
+
+console.log("After Update");
 console.log(a);
 console.log(b);
 //----------------------------------------------------------------------//
